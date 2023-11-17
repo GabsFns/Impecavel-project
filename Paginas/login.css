@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+#cabecalho-principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Poppins;
+    margin: 0px 0px 10px 0px;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.096);
+}
+#logo{
+    margin: 14px ;
+}
+.caixa-cad{
+    text-align: center;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    height: 450px;
+    border: 1px solid black;
+    margin-top: 90px;
+}
+#input-style{
+    display: flex;
+    flex-direction: column;
+    
+}
+#input-style input{
+    border: none;
+    width: 320px;
+    border-bottom: 1px solid black;
+    margin: 20px;
+    outline: none;
+    padding: 4px;
+}
+#input-style input:focus{
+    background-color: rgba(224, 224, 255, 0.281);
+    
+}
+span a{
+   font-size: 12px;
+   color: rgb(20, 20, 104);
+}
+#submit, #cad-btt{
+    font-family: Poppins;
+    padding: 8px;
+    width: 320px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+#submit{
+    background-color: rgb(8, 8, 48);
+}
+#cad-btt{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: 590;
+    border: 1px solid rgb(10, 10, 54);
+}
+.hr-img-principal{
+    display: flex;
+    
+}
+#hr-img2{
+    margin: 70px 0px 0px 6px;
+    padding: 4px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(161, 161, 161);
+    animation: levitateAnimation 1.3s infinite alternate;
+}
+#hr-img{
+    margin: 70px 0px 0px 6px;
+    padding: 2px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    border: none;
+    animation: levitateAnimation 0.9s infinite alternate;
+}
+@keyframes levitateAnimation {
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+  #img-principal{
+    border-radius: 140px 40px 130px 40px;
+    margin-top: 60px;
+    margin-left: 80px;
+    transition: opacity 0.5s ease-in-out
+}
+article{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
